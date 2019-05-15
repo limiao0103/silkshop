@@ -111,6 +111,24 @@ body{background: #fff}
 .totalPages span,.totalSize span{color:#0073a9;margin:0 5px}
 /*分页 end*/
 
+@media screen and (min-width:1200px){ .w{width: 1200px}}
+
+@media screen and (min-width:992px){ .w{width: 1200px}}
+
+@media screen and (min-width:768px){
+    .w{width: 98%;overflow-x: hidden;padding: 0 1%}
+    .header .shop .seach{width: 45%}
+    .header .shop .seach input{width: 100%}
+    .header .shop .logo{margin-left: 20px}
+    .header .shop .shop-car{margin-right: 20px}
+    .slider .slider-dot ul{left: 50px}
+}
+
+@media screen and (min-width:480px){
+
+}
+
+
 
 
 
