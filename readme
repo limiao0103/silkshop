@@ -1,0 +1,54 @@
+
+js-->js样式文件
+css-->css样式文件
+view-->网页存储文件
+data-->网站使用假数据
+image-->image网站使用各种icon图
+picture-->网站使用各种可替换图片
+home.html-->网站入口网页
+
+网页名称
+登录      -->login.html
+忘记密码   -->foget-passeord.html
+用户注册   -->register-user.html
+供应商注册 -->register-suppliers.html
+帮助中心   -->help.html
+商品列表   -->goods.html
+商品详情   -->goods-detail.html
+商品对比   -->goods-compare.html
+订单      -->center-order.html
+订单详情   -->center-order-detail.html
+订单评价   -->center-order-appraise.html
+订单详情监控-->center-order-detail-monitor.html
+订单换货   -->center-order-exchange.html
+订单换货详情-->center-order-exchange-detail.html
+订单收货   -->center-order-receive.html
+订单退货   -->center-order-return.html
+订单退货详情-->center-order-return-detail.html
+支付      -->center-pay.html
+支付详情   -->center-pay-detail.html
+支付按钮页 -->cneter-pay-paybtn
+询盘车     -->center-inquiry-car.html
+询盘单     -->center-inquiry-sheet.html
+询盘单详情  -->center-inquiry-sheet-detail.html
+询盘单维护  -->center-inquiry-sheet-order.html
+发起询盘单  -->center-immediate-enquirise.html
+收藏夹     -->center-favorites.html
+退货       -->center-sales-return
+退货单详情  -->center-sales-detail.html
+退货单监控  -->center-sales-return-monitor.html
+收货       -->center-receive-goods.html
+收货单详情  -->center-receive-goods-detail
+换货       -->center-exchange.html
+换货详情    -->center-exchange-detail.html
+换货详情监控 -->center-exchange-monitor.html
+评价       -->center-appraise.html
+评价详情    -->center-appraise-detail.html
+
+
+
+
+
+
+
+

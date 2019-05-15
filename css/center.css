@@ -1,0 +1,205 @@
+/*个人中心所有样式*/
+.th1{width: 80px}
+.th2{width: 160px}
+.th7{width: 430px}
+.main{border:1px solid #eee ;padding: 50px 30px; box-shadow: 0 0 5px #eee;overflow: hidden}
+.main .selidebar{width: 10%;float: left}
+.main .selidebar h4{margin: 15px 0 15px 15px;font-size: 16px}
+.main .selidebar ul{width: 80%;border-top: 1px solid #eee;margin:  0 auto}
+.main .selidebar ul li{margin-left: 5px;line-height: 30px;font-size: 14px}
+.main .content{width: 85%;height: 600px;float: right}
+.main .content .content-tit{position: relative;width: 100%;height: 35px;line-height: 35px;background: #f2f2f2;font-size: 16px;color: #999;border: 1px solid #e4e4e4}
+.main .content .content-tit h4{margin-left: 20px;font-weight: normal}
+.main .content .content-tit select{position: absolute;right: 10px;top: 9px;font-size: 12px}
+.main .content .order-main{position: relative;margin-top: 5px;border: 2px solid #e4e4e4}
+.main .content .order-main .order-tit{width: 100%;height: 30px;line-height: 30px;background: #f7f7f7;border-bottom: 2px solid #1d7fc5}
+.main .content .order-main ul li{float: left;padding:0 20px;font-size: 14px;color: #6e6e6e }
+.main .content .order-main .order-list{width: 100%;height: 500px;overflow-x: auto;overflow-y: auto}
+.main .content .order-main .order-list .tit{height: 35px;line-height: 35px;text-align: center;background: #e4e4e4}
+.main .content .order-main .order-list table{display: none;position: relative}
+.main .content .order-main .order-list .tit th{color: #666}
+.main .content .order-main .order-list tr{border-bottom: 1px solid #f2f2f2}
+.main .content .order-main .order-list tr td{border-right: 1px solid #f2f2f2;text-align: center}
+.main .content .order-main .order-list tr td span{display: inline-block;height: 30px;line-height: 30px;width: 80px}
+.main .content .order-main .order-list tr td>a{display: inline-block;width: 50px;height: 25px;line-height: 25px;border-radius: 5px;background:#e4e4e4;text-align: center;text-decoration: none;margin: 0 5px}
+.act_active{display: block;background: #1d7fc5}
+.act_active>a{color: #fff}
+/*我的收藏车、我的收藏夹*/
+.order-list .order-list-tit{width: 100%;height: 35px;line-height: 35px;background: #f2f2f2;color: #333;position: absolute;top: 32px;left: 0}
+.order-list .order-list-tit a{display: inline-block;padding: 0 10px}
+.order-list .order-list-tit a:nth-child(3){float: right;margin-right: 150px}
+.order-list .order-list-main{width: 100%;padding: 30px 0}
+.order-list .order-list-main .item{width: 100%;height: 70px;overflow: hidden;border-bottom: 1px solid #eee}
+.order-list .order-list-main .item .item-goods{width: 80%;float: left}
+.order-list .order-list-main .item .item-goods a:nth-child(1){width: 5%;display: inline-block;    margin-top: 32px;float: left;text-align: center}
+.order-list .order-list-main .item .item-goods a:nth-child(2){width: 95%;display: inline-block;line-height: 70px}
+.order-list .order-list-main .item .item-goods a img{width: 50px;height: 50px;margin-top: 15px;float: left}
+.order-list .order-list-main .item .item-goods a div{float: left;width: 500px;height: 50px;margin: 15px 0 0 10px}
+.order-list .order-list-main .item .item-goods a p{width: 100%;height: 25px;line-height: 25px;overflow: hidden}
+.order-list .order-list-main .item .item-goods a p:nth-child(2){font-size: 14px;color:#1d7fc5}
+.order-list .order-list-main .item .item-oper{width: 19%;float: right;margin-top: 9px}
+.order-list .order-list-main .item .item-oper a{display: block;margin-bottom: 3px}
+.order-list .order-list-bottom{width: 100%;height: 35px;line-height: 35px;background: #f2f2f2;color: #333;position: absolute;bottom: 0;left: 0}
+.order-list .order-list-bottom>p{display: inline-block;float: left}
+.order-list .order-list-bottom a{display: inline-block;padding: 0 10px}
+.order-list .order-list-bottom a.last{float: right;display: inline-block;width: 50px;text-align: center;height: 35px;line-height: 35px;background:#1d7fc5;color: #fff;border-radius:5px;margin-right: 10px}
+.order-list .order-list-bottom a.btn{display: inline-block;width: 50px;text-align: center;height: 30px;line-height: 30px;background:#f60;color: #fff;border-radius:5px}
+/*我的订单详情*/
+.immediate-des{overflow: hidden}
+.immediate-des h4{margin: 10px 0 0 10px;font-size: 14px}
+.immediate-des p{width: 24%;float: left;line-height: 25px;font-size: 12px;padding-left: 1%;overflow: hidden}
+.immediate-des p.last{position: relative;width: 100%;margin-top: 5px}
+.immediate-des p.last span{position: absolute;top: 0}
+.immediate-des p.last textarea{width: 402px;height: 40px;display: inline-block;margin-left: 80px}
+.monitoring-btn{background: #eee;border-radius: 5px}
+/*弹框*/
+.extend-infor-box{width: 430px;min-height: 100px;max-height: 570px;height: auto;overflow-y: inherit;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;position: absolute;top:20px;left: 200px;background: #fff ;border: 1px solid #999;display: none;z-index: 999}
+.extend-infor-box p{line-height: 30px;width: 100%;border-bottom: 1px solid #eee}
+.extend-infor-box p.extend-infor-tit{background: #eee;font-size: 14px}
+.extend-infor-box p span{width: 200px;display: inline-block;text-align: center}
+.extend-infor-box p span:nth-child(2n){border-left: 1px solid #eee}
+.extend-infor-box p.extend-infor-btn a{display: block;width:70px;height: 25px;line-height: 25px;text-align: center;background: #1d7fc5;color: #fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin: 5px auto}
+/*订单-退货-->添加*/
+.view-box{width: 800px;min-height: 200px;max-height: 700px;height: auto;overflow-y: inherit;display: none;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;position: absolute;top:20px;left: 60px;background: #fff ;border: 1px solid #999;z-index: 999;padding: 20px}
+.view-box p{display: inline-block;margin-right: 20px;margin-bottom: 10px;font-size: 14px}
+.view-box table{display: block;width: 600px}
+.view-box table tbody{border: 1px solid #eee}
+.view-box table th{width: 120px}
+.view-box p.view-box-btn{width: 100%;margin-bottom: 0;text-align: center}
+.view-box p.view-box-btn a{display: inline-block;width:70px;height: 25px;line-height: 25px;text-align: center;background: #1d7fc5;color: #fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin: 10px}
+/*监控*/
+.view-img{width: 200px;position: absolute;top: 10px;display: none}
+.view-img img{width: 100%;max-height: 180px}
+.view-btn{cursor: pointer}
+.view-box table{position: relative}
+.view-box table .tit{height: 35px;line-height: 35px;text-align: center;background: #e4e4e4}
+.view-box table tr{color: #666;border-bottom: 1px solid #f2f2f2}
+td{border-right: 1px solid #f2f2f2;text-align: center}
+.order-minitor-main{position: relative;width: 98%;height: auto;background: #eee;border: 1px solid #e4e4e4;padding: 1%;margin-top: 10px}
+.order-minitor-main .minitor-tit{width: 100%;height: 60px}
+.order-minitor-main .minitor-tit .left{width: 20%;float: left;background: #1d7fc5;height: 100%}
+.order-minitor-main .minitor-tit .left p{color: #fff;line-height: 20px;margin: 10px 10px}
+.order-minitor-main .minitor-tit .right{width: 79%;float: right;background: #1d7fc5;height: 40px;padding: 10px 0;}
+.order-minitor-main .minitor-tit .right img{width: 40px;height: 40px;margin:0 10px;float: left}
+.order-minitor-main .minitor-tit .right p{color: #fff}
+.order-minitor-main .minitor-logistics1{width: 100%;overflow: hidden;background: #fff;margin-top: 10px;padding: 10px 0}
+.order-minitor-main .minitor-logistics1 .left{float: left;width: 29%;border-right: 1px solid #eee;text-align: center}
+.order-minitor-main .minitor-logistics1 .left .number{margin-top: 10px}
+.order-minitor-main .minitor-logistics1 .left .waiting-goods{font-size: 20px;color: #ff664f;margin-top: 10px}
+.order-minitor-main .minitor-logistics1 .left .countdown{color: #ff664f;margin-top: 10px}
+.order-minitor-main .minitor-logistics1 .left .countdown i{display: inline-block;width: 12px;height: 12px;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position: -111px -179px}
+.order-minitor-main .minitor-logistics1 .left .reminder{width: 85px;height: 28px;border: 1px solid #f00;
+    -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;line-height: 28px;text-align: center;margin: 10px auto}
+.order-minitor-main .minitor-logistics1 .left .confirm-goods{width: 85px;height: 28px;border: 1px solid #e6e6e6;background: #eee;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;line-height: 28px;text-align: center;margin: 0 auto 10px}
+.order-minitor-main .minitor-logistics1 .left .print-order{float: left;margin: 20px}
+.order-minitor-main .minitor-logistics1 .left .print-order i{display: inline-block;width: 12px;height: 12px;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position: -153px -179px}
+.order-minitor-main .minitor-logistics1 .left .cancel-order{float: right;margin: 20px}
+.order-minitor-main .minitor-logistics1 .left .cancel-order i{display: inline-block;width: 12px;height: 12px;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position: -133px -179px}
+.order-minitor-main .minitor-logistics1 .right{float: right;width: 70%}
+.order-minitor-main .minitor-logistics1 .right p{margin-top: 10px }
+.order-minitor-main .minitor-logistics1 .right .right-flow{width:100%;margin-top: 50px}
+.order-minitor-main .minitor-logistics1 .right .right-flow li{float: left}
+.order-minitor-main .minitor-logistics1 .right .right-flow div{float: left}
+.order-minitor-main .minitor-logistics1 .right .right-flow div>p{margin-top: 5px}
+.order-minitor-main .minitor-logistics1 .right .right-flow div>i{display: block;width: 32px;height: 32px;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position: -49px 0;margin: 0 auto}
+.order-minitor-main .minitor-logistics1 .right .right-flow div span{display: block}
+.order-minitor-main .minitor-logistics1 .right .right-flow div>i.pay{background-position:  -50px -39px}
+.order-minitor-main .minitor-logistics1 .right .right-flow div>i.outbound{background-position:0  -83px}
+.order-minitor-main .minitor-logistics1 .right .right-flow div>i.delivery{background-position:0  -126px }
+.order-minitor-main .minitor-logistics1 .right .right-flow div>i.complete{background-position: 0  -163px}
+.order-minitor-main .minitor-logistics1 .right .right-flow .line{width: 90px;height: 8px;display: inline-block;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position:-82px 0;margin-top: 10px}
+.order-minitor-main .minitor-logistics1 .right .right-flow .line2{width: 90px;height: 8px;display: inline-block;background: url("../image/center-order-monitor-icon.png")no-repeat;background-position:-82px -8px;margin-top: 10px}
+.minitor-logistics2{width: 100%;overflow: hidden;background: #fff;margin-top: 10px;padding: 10px 0}
+.minitor-logistics2 ul{line-height: 20px;margin-left: 150px;padding:0 10px}
+.minitor-logistics2 ul li{margin-bottom: 5px;position: relative}
+.minitor-logistics2 ul li>span{width: 100px;display: inline-block;font-size: 12px}
+.minitor-logistics2 ul li p{display: inline-block;width: 500px;height: 20px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap}
+.minitor-logistics2 ul li i{display: inline-block;width: 6px;height: 6px;border-radius: 50%;position: absolute;left: -14px;top: 8px;background: #797979;box-shadow:0 0 5px #999}
+.minitor-logistics2 ul li em{position: absolute;left: -70px;top: 0px;color: #1d7cb9}
+.minitor-logistics2 ul li:nth-child(1) i{background: #1d7fc5}
+.order-minitor-main .minitor-panel{width: 96%;overflow: hidden;background: #fff;margin-top: 10px;padding: 10px 2%}
+.order-minitor-main .minitor-panel .dl{width: 23%;float: left;border-right: 1px solid #eee;padding-left: 1%;height: 220px}
+.order-minitor-main .minitor-panel .dl .pay-item{margin-bottom: 5px}
+.order-minitor-main .minitor-panel .dl .pay-item p{display: inline-block}
+.order-minitor-main .minitor-panel .dl:nth-child(4){border: none}
+.order-minitor-main .minitor-panel .dl .dt h4{line-height: 30px}
+.order-minitor-main .minitor-panel .dl .dd{color: #333;line-height: 20px}
+.order-minitor-main .minitor-panel .dl .dd .item {line-height: 24px;display: block}
+.order-minitor-main .minitor-panel .dl .dd .item span{float: left; width: 65px}
+.order-minitor-main .minitor-panel .dl .dd .item p{width: 140px;float: left;max-height: 72px;overflow: hidden}
+.order-minitor-main .minitor-btn{margin: 20px auto;text-align: center}
+.order-minitor-main .minitor-btn a{display: inline-block; width: 100px; height: 30px; line-height: 30px; text-align: center; color: #fff;border-radius: 5px;background: #1d7cb9}
+.minitor-list-goods{width: 100%;overflow: hidden;background: #fff;margin-top: 10px}
+.minitor-list-goods table{width: 100%}
+.minitor-list-goods table tr.tit{line-height: 25px;background: #e4e4e4}
+.minitor-list-goods table tr.tit th{font-weight: normal;width: 10%}
+.minitor-list-goods table tr.tit th:nth-child(1){width: 40%}
+.minitor-list-goods table tr{padding: 10px;border-bottom: 1px solid #eee}
+.minitor-list-goods table tr td{text-align: center}
+.minitor-list-goods table tr td:nth-child(1){text-align: left}
+.minitor-list-goods table tr td img{float: left;width: 60px;height: 60px;border: 1px solid #eee;margin: 10px 10px 10px 70px}
+.minitor-list-goods table tr td a:nth-child(2){width: 200px;height: 40px;line-height: 20px;overflow: hidden;text-align: left;display: inline-block; margin-top: 20px}
+.minitor-list-goods ul{width: 180px;float:right;padding: 10px}
+.minitor-list-goods ul li{height: 25px}
+.minitor-list-goods ul li p{text-align: left}
+.minitor-list-goods ul li:nth-child(4) p{color: #1d7fc5}
+.minitor-list-goods ul li:nth-child(4) span{font-size: 18px}
+.minitor-list-goods ul li p span{display: inline-block;width: 100px;text-align: left;float: right}
+/*订单-->跟踪*/
+.tracking-box{width: 850px;max-height: 500px;overflow-y: scroll;border: 2px solid #eee;box-shadow: 0 0 20px #666;position: absolute;top: 100px;left: 50px;background: #fff;border-radius: 10px;display: none}
+.tracking-box>span{font-size: 20px;position: absolute;right: 10px;top: 5px;cursor: pointer}
+/*订单-->订单退货-->详情*/
+.return-info{width: 100%;margin-top: 10px}
+.return-info>p{margin-left: 10px;line-height: 30px;color: #666}
+.return-info>p span{color: #de1e10}
+.return-info>p input{width: 100px}
+.return-info div{margin: 10px}
+.return-info div p{line-height: 20px;color: #666}
+.return-user{width: 100%;margin-top: 10px}
+.return-user h4{font-size: 14px;margin: 10px}
+.return-user div{margin-bottom: 10px}
+.return-user div span{display: inline-block;margin-left: 10px}
+.return-user div p{display: inline-block}
+.return-user div a{display: inline-block;margin-right: 10px;padding: 2px 5px;border: 1px solid #eee}
+.return-user div a.return-act{border: 1px solid #1d7fc5}
+.return-detail-btn{width: 100%;height: 20px;margin: 20px auto;text-align: center}
+.return-detail-btn a{display: inline-block;width: 80px;height: 20px;color:#fff;background: #1d7fc5;text-align: center;line-height: 20px;border-radius: 5px}
+.return-add-btn{display: inline-block;width: 80px;text-align: center;line-height: 30px;background: #eee;border-radius: 5px;margin-bottom: 10px}
+/*订单-->订单评价*/
+.order-appraise-tit{width: 100%;margin: 10px auto;text-align: center}
+.order-appraise-tit h3{font-size: 24px;margin-bottom: 15px}
+.order-appraise-tit p{font-size: 16px;color: #666}
+.order-appraise-center {width: 90%;margin: 0 5%;border: 1px solid #eee;text-align: center;background: #fff;overflow: hidden}
+.order-appraise-center .left{width: 29%;border-right: 1px solid #eee;overflow: hidden;padding: 20px 0;font-size: 14px;float: left}
+.order-appraise-center .left p{line-height: 25px}
+.order-appraise-center .left ul{margin: 10px 0 0  90px }
+.order-appraise-center .left ul li{float: left;margin-right: 10px;color: #666}
+.order-appraise-center .right{width: 70%;float: right;text-align: left}
+.order-appraise-center .right p{font-size: 14px;color: #f90;margin: 20px 0 20px 20px}
+.order-appraise-center .right .order-appraise-list{margin-left: 20px}
+.order-appraise-center .right .order-appraise-list h4{float: left;width: 90px}
+.order-appraise-center .right .order-appraise-list ul li{float: left;font-size: 18px;margin-left: 5px}
+.order-appraise-center .right .order-appraise-list .item{height: 40px;float: left;width: 300px}
+.order-appraise-center .right .order-appraise-list .item p{display: inline-block;width: 50px;float: left;margin: 0}
+.order-appraise-goods{position: relative;width: 90%;margin: 0 5%;border: 1px solid #eee;text-align: center;background: #fff;overflow: hidden;margin-top: 20px;padding-top: 10px}
+.order-appraise-goods>p{font-size: 14px;color: #f90;width: 200px;position: absolute;left: 43%;top:10px}
+.order-appraise-goods .item{overflow: hidden;width: 100%;margin: 10px 0;border-bottom:  1px solid #eee;padding-bottom: 10px}
+.order-appraise-goods .item .left{width: 45%;float: left}
+.order-appraise-goods .item .left a{display: block;height: 80px;float: left;margin-top: 10px;margin-left: 20px}
+.order-appraise-goods .item .left a:nth-child(2){height: 40px;line-height: 20px;margin-left: 10px}
+.order-appraise-goods .item .left a img{width: 80px;height: 80px}
+.order-appraise-goods .item .left a div:nth-child(2){text-align: left;height: 40px}
+.order-appraise-goods .item .left a div:nth-child(1){text-align: left;height: 20px;margin-top: 10px}
+.order-appraise-goods .item .left a div span{vertical-align: top}
+.order-appraise-goods .item .left a div p{display: inline-block;width: 200px;line-height: 20px}
+.order-appraise-goods .item .right{width: 55%;float: right;text-align: left}
+.order-appraise-goods .item .right .goods-appra{margin: 10px 0}
+.order-appraise-goods .item .right .goods-appra p{font-size: 14px;color: #f90}
+.order-appraise-goods .item .right .goods-appra ul li{float: left;font-size: 18px}
+.order-appraise-goods .item .right .goods-appra h4{float: left;margin-right: 10px;font-weight: normal}
+.order-appraise-goods .item .right .pub-comment{height: 40px}
+.order-appraise-goods .item .right .pub-comment span{vertical-align: top}
+.order-appraise-goods .appreise-goods-btn{margin: 20px 0}
+.order-appraise-goods .appreise-goods-btn a{display: inline-block;width: 100px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px;background: #1d7cb9}
+.order-appraise-goods .appreise-goods-btn p{display: inline-block}
+.center-del,.center-upload{cursor: pointer}

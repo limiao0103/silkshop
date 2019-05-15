@@ -1,0 +1,180 @@
+{
+  "slider": [
+    {
+      "image": "picture/slide-1.jpg"
+    },
+    {
+      "image": "picture/slide-2.jpg"
+    },
+    {
+      "image": "picture/slide-3.jpg"
+    },
+    {
+      "image": "picture/slide-4.jpg"
+    },
+    {
+      "image": "picture/slide-5.jpg"
+    },
+    {
+      "image": "picture/slide-6.jpg"
+    },
+    {
+      "image": "picture/slide-1.jpg"
+    },
+    {
+      "image": "picture/slide-2.jpg"
+    },
+    {
+      "image": "picture/slide-3.jpg"
+    },
+    {
+      "image": "picture/slide-4.jpg"
+    },
+    {
+      "image": "picture/slide-5.jpg"
+    },
+    {
+      "image": "picture/slide-6.jpg"
+    }
+  ],
+  "list": [
+    {
+      "id": "1",
+      "desc": "第七代酷睿i5处理器！8G大内存搭载256SSD固态！速度快，性能表现更好！！2G独显！1年上门服务！服务可靠！",
+      "comment": 1200,
+      "image": "//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg"
+    },
+    {
+      "id": "2",
+      "desc": "【升级4G大显存！Nvme协议Pcie SSD,速度快人一步】GTX1050Ti就选拯救者！专业游戏键盘&新模具全新设计！",
+      "comment": 150,
+      "image": "//img13.360buyimg.com/n7/jfs/t8830/106/1760940277/195595/5cf9412f/59bf2ef5N5ab7dc16.jpg"
+    },
+    {
+      "id": "3",
+      "desc": "【小新·潮之选】i7双硬盘 性价比实用优选 经典配置小新 高清屏独显实力之选 ！",
+      "comment": 1700,
+      "image": "//img13.360buyimg.com/n7/jfs/t10678/22/239679659/153249/fc2e5fb5/59c9d0beN1dfac76f.jpg"
+    },
+    {
+      "id": "4",
+      "desc": "错过悔哭！酷睿i5处理器！7200转硬盘！2G独显！！性能杠杠的有保证！》》》升级第七代处理器！带1年上门服务！",
+      "comment": 2200,
+      "image": "//img11.360buyimg.com/n7/jfs/t5044/98/268452595/59659/347c804e/58de0c21Ne8682d85.jpg"
+    },
+    {
+      "id": "5",
+      "desc": "【游戏本选择4G独显，拒绝掉帧】升级版IPS全高清防眩光显示屏，WASD方向键颜色加持，三大出风口立体散热！",
+      "comment": 9870,
+      "image": "//img10.360buyimg.com/n7/jfs/t7768/184/1153704394/148460/f42e1432/599a930fN8a85626b.jpg"
+    },
+    {
+      "id": "6",
+      "desc": "惠普（HP）薄锐ENVY 13-ad103TX 13.3英寸超轻薄笔记本（i5-8250U 8G 256GSSD MX150 2G独显 FHD）银色",
+      "comment": 5550,
+      "image": "//img13.360buyimg.com/cms/s190x190_jfs/t7627/139/1316546815/293754/f75f1a32/599bf5d1N29d229fc.jpg"
+    },
+    {
+      "id": "7",
+      "desc": "【游戏本选择4G独显，拒绝掉帧】升级版IPS全高清防眩光显示屏，WASD方向键颜色加持，三大出风口立体散热！",
+      "comment": 9990,
+      "image": "//img13.360buyimg.com/n7/jfs/t7669/353/1154512620/148460/f42e1432/599a9227N10e2fd8b.jpg"
+    },
+    {
+      "id": "8",
+      "desc": "【领券下单减100！一款适合追求坚实耐用品质、对游戏娱乐有较高需求人士的性能娱乐本！】现在选华硕！全场领券下单更优惠！领券所有商品都能用》》",
+      "comment": 1990,
+      "image": "//img12.360buyimg.com/n7/jfs/t8890/197/2536352544/268864/1819655c/59d222deN12fcccc8.jpg"
+    },
+    {
+      "id": "9",
+      "desc": "【i5 MX150 2G显存】全高清窄边框 8G内存 256固态硬盘 支持指纹识别 预装WIN10系统",
+      "comment": 180,
+      "image": "//img12.360buyimg.com/n7/jfs/t6700/155/2098998076/156185/6cf95035/595dd5a5Nc3a7dab5.jpg"
+    },
+    {
+      "id": "10",
+      "desc": "【Nvme协议Pcie SSD,速度快人一步】GTX1050就选拯救者！专业游戏键盘&新模具全新设计！接口齐全 良心之作！",
+      "comment": 15500,
+      "image": "//img14.360buyimg.com/n7/jfs/t8338/67/1733901160/195595/5cf9412f/59bf2e8eNdc175e38.jpg"
+    },
+    {
+      "id": "11",
+      "desc": "第七代酷睿i5处理器！8G大内存搭载256SSD固态！速度快，性能表现更好！！2G独显！1年上门服务！服务可靠！",
+      "comment": 1200,
+      "image": "//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg"
+    },
+    {
+      "id": "12",
+      "desc": "【升级4G大显存！Nvme协议Pcie SSD,速度快人一步】GTX1050Ti就选拯救者！专业游戏键盘&新模具全新设计！",
+      "comment": 150,
+      "image": "//img13.360buyimg.com/n7/jfs/t8830/106/1760940277/195595/5cf9412f/59bf2ef5N5ab7dc16.jpg"
+    },
+    {
+      "id": "13",
+      "desc": "【小新·潮之选】i7双硬盘 性价比实用优选 经典配置小新 高清屏独显实力之选 ！",
+      "comment": 1700,
+      "image": "//img13.360buyimg.com/n7/jfs/t10678/22/239679659/153249/fc2e5fb5/59c9d0beN1dfac76f.jpg"
+    },
+    {
+      "id": "14",
+      "desc": "错过悔哭！酷睿i5处理器！7200转硬盘！2G独显！！性能杠杠的有保证！》》》升级第七代处理器！带1年上门服务！",
+      "comment": 2200,
+      "image": "//img11.360buyimg.com/n7/jfs/t5044/98/268452595/59659/347c804e/58de0c21Ne8682d85.jpg"
+    },
+    {
+      "id": "15",
+      "desc": "【游戏本选择4G独显，拒绝掉帧】升级版IPS全高清防眩光显示屏，WASD方向键颜色加持，三大出风口立体散热！",
+      "comment": 9870,
+      "image": "//img10.360buyimg.com/n7/jfs/t7768/184/1153704394/148460/f42e1432/599a930fN8a85626b.jpg"
+    },
+    {
+      "id": "16",
+      "desc": "惠普（HP）薄锐ENVY 13-ad103TX 13.3英寸超轻薄笔记本（i5-8250U 8G 256GSSD MX150 2G独显 FHD）银色",
+      "comment": 5550,
+      "image": "//img13.360buyimg.com/cms/s190x190_jfs/t7627/139/1316546815/293754/f75f1a32/599bf5d1N29d229fc.jpg"
+    },
+    {
+      "id": "17",
+      "desc": "【游戏本选择4G独显，拒绝掉帧】升级版IPS全高清防眩光显示屏，WASD方向键颜色加持，三大出风口立体散热！",
+      "comment": 9990,
+      "image": "//img13.360buyimg.com/n7/jfs/t7669/353/1154512620/148460/f42e1432/599a9227N10e2fd8b.jpg"
+    },
+    {
+      "id": "18",
+      "desc": "【领券下单减100！一款适合追求坚实耐用品质、对游戏娱乐有较高需求人士的性能娱乐本！】现在选华硕！全场领券下单更优惠！领券所有商品都能用》》",
+      "comment": 1990,
+      "image": "//img12.360buyimg.com/n7/jfs/t8890/197/2536352544/268864/1819655c/59d222deN12fcccc8.jpg"
+    },
+    {
+      "id": "19",
+      "desc": "【i5 MX150 2G显存】全高清窄边框 8G内存 256固态硬盘 支持指纹识别 预装WIN10系统",
+      "comment": 180,
+      "image": "//img12.360buyimg.com/n7/jfs/t6700/155/2098998076/156185/6cf95035/595dd5a5Nc3a7dab5.jpg"
+    },
+    {
+      "id": "20",
+      "desc": "【Nvme协议Pcie SSD,速度快人一步】GTX1050就选拯救者！专业游戏键盘&新模具全新设计！接口齐全 良心之作！",
+      "comment": 15500,
+      "image": "//img14.360buyimg.com/n7/jfs/t8338/67/1733901160/195595/5cf9412f/59bf2e8eNdc175e38.jpg"
+    }
+  ],
+  "compare": [
+    {
+      "id": "1",
+      "desc": "第七代酷睿i5处理器！8G大内存搭载256SSD固态！速度快，性能表现更好！！2G独显！1年上门服务！服务可靠！"
+    },
+    {
+      "id": "2",
+      "desc": "【升级4G大显存！Nvme协议Pcie SSD,速度快人一步】GTX1050Ti就选拯救者！专业游戏键盘&新模具全新设计！"
+    },
+    {
+      "id": "3",
+      "desc": "【小新·潮之选】i7双硬盘 性价比实用优选 经典配置小新 高清屏独显实力之选 ！！"
+    },
+    {
+      "id": "4",
+      "desc": "错过悔哭！酷睿i5处理器！7200转硬盘！2G独显！！性能杠杠的有保证！》》》升级第七代处理器！带1年上门服务！"
+    }
+  ]
+}

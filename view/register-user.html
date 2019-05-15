@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/daterangepicker.css">
+    <link rel="stylesheet" href="../css/foundation-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery.min.js"></script>
+    <!--省市地址联动-->
+    <script src="../js/jquery.cityselect.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <!--区域日期插件-->
+    <script src="../js/jquery.daterangepicker.js"></script>
+    <!--单个日期插件-->
+    <script src="../js/foundation-datepicker.js"></script>
+    <script>
+        $(function () {
+            //区域日期调用
+            $.dateRangePickerLanguages['custom'] =
+                {
+                    'selected': 'Choosed:',
+                    'days': 'Days',
+                    'apply': 'Close',
+                    'week-1': 'Mon',
+                    'week-2': 'Tue',
+                    'week-3': 'Wed',
+                    'week-4': 'Thu',
+                    'week-5': 'Fri',
+                    'week-6': 'Sat',
+                    'week-7': 'Sun',
+                    'month-name': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    'shortcuts': 'Shortcuts',
+                    'past': 'Past',
+                    '7days': '7days',
+                    '14days': '14days',
+                    '30days': '30days',
+                    'previous': 'Previous',
+                    'prev-week': 'Week',
+                    'prev-month': 'Month',
+                    'prev-quarter': 'Quarter',
+                    'prev-year': 'Year',
+                    'less-than': 'Date range should longer than %d days',
+                    'more-than': 'Date range should less than %d days',
+                    'default-more': 'Please select a date range longer than %d days',
+                    'default-less': 'Please select a date range less than %d days',
+                    'default-range': 'Please select a date range between %d and %d days',
+                    'default-default': 'This is costom language'
+                };
+            $('#businessTerm').dateRangePicker();
+
+
+            //单个日期调用
+            $('#socialCredit').fdatepicker();
+            $('#foundTime').fdatepicker()
+
+            //省市二联动调用
+            $("#basic-city").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-1").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-2").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-3").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-4").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-5").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-6").citySelect({
+                nodata: "none",
+                required: false
+            });
+            $("#city-7").citySelect({
+                nodata: "none",
+                required: false
+            });
+            //步骤2tab切换
+            $("#userTowMenu").on("click","li",function(){
+                // 设index为当前点击
+                var index = $(this).index();
+                // 点击添加样式利用siblings清除其他兄弟节点样式
+                $(this).addClass("active").siblings().removeClass("active");
+                // 同理显示与隐藏
+                $(this).parents(".step-two").find(".info-list .item").eq(index).show().siblings().hide();
+            });
+            //注册按钮控制
+            $("#userNextStep").click(function () {
+                $('.step-one').hide();
+                $('.step-two').show()
+                $('.progress-bar').css('width','66%')
+            });
+            $("#userLastStep").click(function () {
+                $('.step-one').show();
+                $('.step-two').hide()
+                $('.progress-bar').css('width','33%')
+            });
+            $("#userSubmit").click(function () {
+                $('.step-one').hide();
+                $('.step-two').hide();
+                $('.step-three').show();
+                $('.progress-bar').css('width','100%')
+            })
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="login-head">
+    <div class="w" style="width: 700px">
+        <div class="logo" style="float: left">
+            <a href="../home.html">
+                <img src="../image/header-logo.png" alt="">
+            </a>
+            <span class="welcome">欢迎登陆</span>
+        </div>
+        <a href="help.html" class="help">登录页面，帮助</a>
+    </div>
+</div>
+
+<div class="reg-main w">
+    <!--头部-->
+    <div class="reg-tit">
+        <ul>
+            <li><i>1</i><span>注册会员信息</span></li>
+            <li><i>2</i><span>完善会员信息</span></li>
+            <li><i>3</i><span>注册成功</span></li>
+        </ul>
+        <div class="progress-bar" style="width: 33%"></div>
+    </div><!--头部 end-->
+    <div class="reg-submit">
+        <form action="" method="post">
+            <!--入口切换按钮-->
+            <div class="step">
+                <!--注册会员信息-->
+                <div class="step-one">
+                    <div class="inlet-btn">
+                        <div class="menu">
+                            <input type="radio" id="suppliersBtn">
+                            <label for="suppliersBtn">供应商注册</label>
+                            <a href="register-suppliers.html"></a>
+                        </div>
+                        <div class="menu">
+                            <input type="radio" id="userBtn" checked="checked">
+                            <label for="userBtn">用户注册</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label>用户名:</label>
+                        <input type="text" placeholder="请输入用户名">
+                        <span class="remind-err">用户名已存在</span>
+                    </div>
+                    <div class="item">
+                        <label>密码:</label>
+                        <input type="text" placeholder="请输入密码">
+                        <span class="remind-err">密码最低6位，由数字、大写字母、小写字母
+及特殊字母组成</span>
+                    </div>
+                    <div class="item">
+                        <label>确认密码:</label>
+                        <input type="text" placeholder="请确认密码">
+                        <span class="remind-err">重新输入密码</span>
+                    </div>
+                    <div class="item">
+                        <label>邮箱:</label>
+                        <input type="text" placeholder="请输入邮箱">
+                        <span class="remind-err">qq邮箱，163邮箱</span>
+                    </div>
+                    <div class="item">
+                        <label>验证码:</label>
+                        <input type="text" placeholder="请输入验证码">
+                    </div>
+                    <a href="login.html">已有账号，立即登录？</a>
+                    <div class="btn" id="userNextStep">
+                        <a href="javascript:;">下一步</a>
+                    </div>
+                </div>
+                <!--用户完善会员信息-->
+                <div class="step-two user">
+                    <ul id="userTowMenu">
+                        <li class="active"><i></i><span>用户基本信息</span></li>
+                        <li><i></i><span>用户联系信息</span></li>
+                        <li><i></i><span>用户财务信息</span></li>
+                        <li><i></i><span>资产负债情况</span></li>
+                        <li><i></i><span>银行开户情况</span></li>
+                        <li><i></i><span>产品收货地址</span></li>
+                    </ul>
+                    <div class="info-list">
+                        <!--用户基本信息-->
+                        <div class="basic-info item" style="display: block">
+                            <a href="javascript:;">
+                                <label for="companyName">公司名称</label>
+                                <input type="text" id="companyName">
+                            </a>
+                            <a href="javascript:;">
+                                <label>所在地</label>
+                                <div id="basic-city" class="city">
+                                    <select class="prov"></select>
+                                    <select class="city" disabled="disabled"></select>
+                                </div>
+                            </a>
+                            <a href="javascript:;">
+                                <label>公司性质</label>
+                                <select style="width: 384px;height: 21px">
+                                    <option value="">请选择</option>
+                                    <option value="有限责任公司">有限责任公司</option>
+                                    <option value="股份有限公司">股份有限公司</option>
+                                    <option value="国有独资公司">国有独资公司</option>
+                                    <option value="个人独资公司">个人独资公司</option>
+                                    <option value="合伙企业">合伙企业</option>
+                                    <option value="个人工商户">个人工商户</option>
+                                    <option value="外商独资企业">外商独资企业</option>
+                                    <option value="中外合作企业">中外合作企业</option>
+                                    <option value="中外合资企业">中外合资企业</option>
+                                    <option value="私营企业">私营企业</option>
+                                    <option value="全民所有制企业">全民所有制企业</option>
+                                    <option value="集体所有制企业">集体所有制企业</option>
+                                </select>
+                            </a>
+                            <a href="javascript:;">
+                                <label for="companyPerson">公司规模(人)</label>
+                                <input type="text" id="companyPerson">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="legalPerson">法人代表(人)</label>
+                                <input type="text" id="legalPerson">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="registeredCapital">注册资本(元)</label>
+                                <input type="text" id="registeredCapital">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="businessTerm">营业期限</label>
+                                <input type="text" id="businessTerm" placeholder="年-月-日 to 年-月-日    ">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="businessLicense">营业执照扫描照</label>
+                                <input type="file" id="businessLicense">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="webLinks">企业网站链接</label>
+                                <input type="text" id="webLinks">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="remark">备注</label>
+                                <input type="text" id="remark">
+                            </a>
+                            <a href="javascript:;">
+                                <label>行业分类</label>
+                                <select style="width: 384px;height: 21px">
+                                    <option value="智能选择方案">智能选择方案</option>
+                                    <option value="生活家电">生活家电</option>
+                                    <option value="生活家居/办公家具">生活家居/办公家具</option>
+                                    <option value="室内装修">室内装修</option>
+                                    <option value="软装系统">软装系统</option>
+                                    <option value="卫浴洁具">卫浴洁具</option>
+                                    <option value="综合机电">综合机电</option>
+                                    <option value="基础材料">基础材料</option>
+
+                                </select>
+                            </a>
+                            <a href="javascript:;">
+                                <label for="socialCredit">社会信用代码</label>
+                                <input type="text" id="socialCredit" placeholder="年-月-日">
+                            </a>
+                            <div>
+                                <label for="foundTime">企业成立日期</label>
+                                <input type="text" id="foundTime" placeholder="年-月-日">
+                            </div>
+                            <a href="javascript:;">
+                                <label for="paidInCapital">实收资本</label>
+                                <input type="text" id="paidInCapital">
+                            </a>
+                        </div>
+                        <!--用户联系信息-->
+                        <div class="contact-info item">
+                            <div class="prompt-message">
+                                <span>填写注意事项</span>
+                                <p>专用手机号将作为贵公司对接人员专用账号，参与招投标业务。</p>
+                            </div>
+                            <a href="javascript:;">
+                                <label for="contactAuthorizedClient">授权委托人姓名</label>
+                                <input type="text" id="contactAuthorizedClient">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactBusinessPhone">企业电话</label>
+                                <input type="text" id="contactBusinessPhone">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactOfficeAddress">办公地址</label>
+                                <input type="text" id="contactOfficeAddress">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactRegisteredAddress">注册地址</label>
+                                <input type="text" id="contactRegisteredAddress">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactlegalPerson">法人授权委托人</label>
+                                <span class="down-template">模板下载</span>
+                                <input type="file" id="contactlegalPerson" style="width: 300px">
+
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactRegisteredCapital">注册资本(元)</label>
+                                <input type="text" id="contactRegisteredCapital">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactlegalPhone">授权委托人手机号</label>
+                                <input type="text" id="contactlegalPhone">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactPhototelephony">传真电话</label>
+                                <input type="text" id="contactPhototelephony">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="contactPostcode">邮编</label>
+                                <input type="text" id="contactPostcode">
+                            </a>
+                        </div>
+                        <!--用户财务信息-->
+                        <div class="financial-info item">
+                            <div class="prompt-message">
+                                <span>填写注意事项</span>
+                                <p>对于以下信息，若当年无财务信息，请填写0。</p>
+                            </div>
+                            <table border="1">
+                                <tr>
+                                    <th rowspan="4">近三年营业额（元）</th>
+                                    <th>年份</th>
+                                    <th>国内</th>
+                                    <th>国外</th>
+                                    <th>附件</th>
+                                </tr>
+                                <tr>
+                                    <td>2017年</td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <td>2017年</td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <td>2017年</td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="text" value="0"></td>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td colspan="4"></td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                        <!--资产负债情况-->
+                        <div class="liabilities-info item">
+                            <div class="prompt-message">
+                                <span>填写注意事项</span>
+                                <p>1.新成立企业当年验资报告或银行出具的公司资信证明复印件加盖公章。</p>
+                                <p>1.如无当年数据，请填写0。</p>
+                            </div>
+                            <table border="1">
+                                <tr>
+                                    <th rowspan="2">财务状况(元)</th>
+                                    <th colspan="3">近三年</th>
+                                </tr>
+                                <tr>
+                                    <th>2014年</th>
+                                    <th>2014年</th>
+                                    <th>2014年</th>
+                                </tr>
+                                <tr>
+                                    <th>总资产</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>流动资产</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>非流动资产</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>总负债</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>流动负债</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>非流动负债</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>睡前利润</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>税后利润</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>固定资产</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>净资产总之</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>上传附件</th>
+                                    <td><input type="file"></td>
+                                    <td><input type="file"></td>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">备注 &nbsp;<span style="color: red">新成立企业当年验资报告或银行出具的公司资信证明复印材料</span><input
+                                            type="file"></th>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                        <!--银行开户情况-->
+                        <div class="banks-open item">
+                            <a href="javascript:;">
+                                <label for="financialCorporateAccount">企业账户</label>
+                                <input type="text" id="financialCorporateAccount">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="financialAccountTitle">账户名称</label>
+                                <input type="text" id="financialAccountTitle">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="financialBank">开户银行</label>
+                                <input type="text" id="financialBank">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="financialOfficer">财务负责人</label>
+                                <input type="text" id="financialOfficer">
+                            </a>
+                            <a href="javascript:;">
+                                <label for="financialPhone">财务电话</label>
+                                <input type="text" id="financialPhone">
+                            </a>
+
+                        </div>
+                        <!--产品收货地址-->
+                        <div class="shipping-address item">
+                            <table border="1">
+                                <tr>
+                                    <th colspan="3">发货地址</th>
+                                </tr>
+                                <tr>
+                                    <th>发货地址</th>
+                                    <th>地址邮编</th>
+                                    <th>详细地址</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-1" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-2" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-3" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-4" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-5" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-6" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="city-7" class="city">
+                                            <select class="prov"></select>
+                                            <select class="city" disabled="disabled"></select>
+                                        </div>
+                                    </td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:;" id="userLastStep">上一步</a>
+                        <a href="../home.html">保存</a>
+                        <a href="javascript:;" id="userSubmit">提交</a>
+                    </div>
+                </div>
+                <!--注册成功-->
+                <div class="step-three">
+                    <div>
+                        <i>^_^</i>
+                        <span>恭喜您注册成功<a href="../home.html">&nbsp;&nbsp;点击跳转首页</a></span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

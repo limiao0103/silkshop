@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品监控</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/center.css">
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var $div_li = $(".order-tit>li");
+            $div_li.click(function () {
+                $(this).addClass("act_active")            //当前<li>元素高亮
+                    .siblings().removeClass("act_active");  //去掉其它同辈<li>元素的高亮
+                var index = $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+                $(".order-list > table")       //选取子节点。不选取子节点的话，会引起错误。如果里面还有div
+                    .eq(index).show()   //显示 <li>元素对应的<div>元素
+                    .siblings().hide(); //隐藏其它几个同辈的<div>元素
+            });
+            //确认收货弹框
+            $('.reminder').click(function () {
+                confirm('您好，此订单由圆通快递配送，运单号为\n' +
+                    '884862158104004398。感谢您的理解与支持！')
+            });
+
+            var starttime = new Date("2018/1/1");
+            setInterval(function () {
+                var nowtime = new Date();
+                var time = starttime - nowtime;
+                var day = parseInt(time / 1000 / 60 / 60 / 24);
+                var hour = parseInt(time / 1000 / 60 / 60 % 24);
+                var minute = parseInt(time / 1000 / 60 % 60);
+                var seconds = parseInt(time / 1000 % 60);
+                $('.timespan').html("剩余"+day + "天" + hour + "小时" + minute + "分钟" + seconds + "秒");
+            }, 1000);
+        });
+
+
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--登录条-->
+    <div class="loginbar w">
+        <div class="language">
+            <span>语种&nbsp;<i><em></em></i></span>
+            <ul class="language-hidden">
+                <li>中文</li>
+                <li>英文</li>
+                <li>阿拉伯文</li>
+            </ul>
+        </div>
+        <p class="banner">你好，欢迎来到带路者！</p>
+        <div class="siginarea">
+            <a href="login.html" class="login">登录</a>
+            <a href="register-suppliers.html" class="regsiter">注册</a>
+            <a href="#" class="logout">注销</a>
+            <a href="help.html">帮助中心</a>
+            <div class="center">
+                <span>我的带路者<i><em></em></i></span>
+                <ul class="center-hidden">
+                    <li><a href="center-order.html">我的订单</a></li>
+                    <li><a href="center-pay.html">我的支付</a></li>
+                    <li><a href="center-inquiry-sheet.html">我的询盘单</a></li>
+                    <li><a href="center-inquiry-car.html">我的询盘车</a></li>
+                    <li><a href="center-favorites.html">我的收藏夹</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--登录条 end-->
+    <!--功能区-->
+    <div class="shop w">
+        <h1 class="logo">
+            <a href="../home.html">
+                <img src="../image/header-logo.png" alt="">
+            </a>
+        </h1>
+        <div class="seach">
+            <input type="text"><span>搜索</span>
+        </div>
+        <!--询盘车-->
+        <div class="shop-car">
+            <div class="J-shoping J-shoping-small">
+                <div class="J-shoping-item">
+                    <div class="baseBg J-L-ico J-shoping-pos"></div>
+                    <div class="J-shoping-main">
+                        <div class="J-shoping-title">
+                            <a href="#" title="" class="J-go"><em class="baseBg"></em>询盘车</a>
+                            <span class="baseBg J-shoping-num">	0</span>
+                        </div>
+                        <div class="baseBg J-shoping-mx"></div>
+                        <div class="J-shoping-body">
+                            <div class="J-shoping-buy">
+                                <span>最多显示最新<strong>5</strong>条</span>
+                                <a class="baseBg" href="#" title="去询盘">去询盘</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baseBg J-R-ico J-shoping-pos"></div>
+                </div>
+            </div>
+        </div>
+
+    </div><!--功能区 end-->
+</div><!--头部 end-->
+
+<!--二级导航-->
+<div class="second-nav">
+    <div class="w">
+        <ul>
+            <li><a href="../home.html">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+            <li><a href="javascript:;">个人中心</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+            <li><a href="center-order.html">我的订单</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+            <li><a href="javascript:;">产品监控</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+        </ul>
+    </div>
+</div><!--二级导航 end-->
+
+<!--主要内容-->
+<div class="w">
+    <div class="main">
+        <!--侧导航-->
+        <div class="selidebar">
+            <h4>我的带路者</h4>
+            <ul>
+                <li><a href="center-order.html">我的订单</a></li>
+                <li><a href="center-pay.html">我的支付</a></li>
+                <li><a href="center-inquiry-sheet.html">我的询盘单</a></li>
+                <li><a href="center-inquiry-car.html">我的询盘车</a></li>
+                <li><a href="center-favorites.html">我的收藏夹</a></li>
+            </ul>
+            <h4>客户服务</h4>
+            <ul>
+                <li><a href="center-sales-return.html">我的退货</a></li>
+                <li><a href="center-exchange.html">我的换货</a></li>
+                <li><a href="center-receive-goods.html">我的收货</a></li>
+                <li><a href="center-appraise.html">我的评价</a></li>
+            </ul>
+        </div><!--侧导航-->
+        <div class="content" style="height: auto">
+            <!--小标题-->
+            <div class="content-tit">
+                <h4>产品监控</h4>
+            </div><!--小标题-->
+            <div class="order-minitor-main">
+                <div class="minitor-tit">
+                    <div class="left"><p>本次售后服务由带路者商城科技有限公司</p></div>
+                    <div class="right">
+                        <img src="//img11.360buyimg.com//n0/jfs/t5293/120/1494586268/36911/620c750c/59112996N65231e21.jpg"
+                             alt="">
+                        <p>售后服务单号：<span>58558</span></p>
+                        <p>产品名称详情</p>
+                    </div>
+                </div>
+                <div class="minitor-logistics1">
+                    <div class="left">
+                        <p class="number">订单号：<span>5845235</span></p>
+                        <p class="waiting-goods">等待收货</p>
+                        <p class="countdown"><i></i> <span class="timespan"></span> </p>
+                        <p class="reminder"><a href="javascript:;">催单</a></p>
+                        <p class="confirm-goods"><a href="center-receive-goods.html">确认收货</a></p>
+                        <p class="print-order"><a href="javascript:;"><i></i>打印订单</a></p>
+                        <p class="cancel-order"><a href="javascript:;"><i></i>取消订单</a></p>
+                    </div>
+                    <div class="right">
+                        <p>该订单会为您保留24.0小时（从下单之日算起），24.0小时之后如果还未付款，系统将自动取消该订单。</p>
+                        <ul class="right-flow">
+                            <li>
+                                <div>
+                                    <i></i>
+                                    <p>提交订单<span>2017/11/7</span><span>12:00:00</span></p>
+                                </div>
+                                <i class="line2"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="pay"></i>
+                                    <p>付款成功<span>2017/12/7</span><span>16:00:00</span></p>
+                                </div>
+                                <i class="line"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="outbound"></i>
+                                    <p>商品出库<span></span><span></span></p>
+                                </div>
+                                <i class="line"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="delivery"></i>
+                                    <p>等待收货<span></span><span></span></p>
+                                </div>
+                                <i class="line"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="complete"></i>
+                                    <p>完成交易<span></span><span></span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="minitor-logistics2">
+                    <ul>
+                        <li><em>跟踪环节</em><i></i><span>2017-04-25  周二</span><p><span>11:39:07</span>【北京市朝阳区世贸公司】失败签收录入 吴国华</p></li>
+                        <li><i></i><span></span><p><span>09:03:50</span>【北京市朝阳区世贸公司】 派件人:吴国华派件中 派件员电话15911021271</p></li>
+                        <li><i></i><span></span><p><span>07:16:50</span>【北京市朝阳区世贸公司】 已收入</p></li>
+                        <li><i></i><span>2017-04-24  周一</span><p><span>23:11:07</span>【北京转运中心】 已发出下一站  【北京市朝阳区世贸公司】  </p></li>
+                        <li><i></i><span></span><p><span>11:39:07</span>【北京市通州区永乐店公司】已发出 下一站【北京转运中心】     </p></li>
+                        <li><i></i><span></span><p><span>11:39:07</span>您的订单由第三方卖家拣货完毕，待出库交付圆通快递，运单号为884862158104004398</p></li>
+                        <li><i></i><span></span><p><span>11:39:07</span>您的订单已进入第三方卖家仓库，准备出库</p></li>
+                        <li><i></i><span></span><p><span>11:39:07</span>您提交了订单，请等待第三方卖家系统确认</p></li>
+                    </ul>
+                </div>
+                <div class="minitor-panel">
+                    <div class="dl">
+                        <div class="dt"><h4>收件人信息</h4></div>
+                        <div class="dd">
+                            <div class="item">
+                                <span>收件人</span>
+                                <p>小云</p>
+                            </div>
+                            <div class="item">
+                                <span>地址</span>
+                                <p>北京市朝阳区三环以内ifc大厦A座-302</p>
+                            </div>
+                            <div class="item">
+                                <span>手机号</span>
+                                <p>18888888000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt"><h4>配送信息</h4></div>
+                        <div class="dd">
+                            <div class="item">
+                                <span>配送方式</span>
+                                <p>普通快递</p>
+                            </div>
+                            <div class="item">
+                                <span>运费</span>
+                                <p>￥1000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt"><h4>付款信息</h4></div>
+                        <div class="dd">
+                            <div class="item">
+                                <span>付款方式</span>
+                                <p>在线支付</p>
+                            </div>
+                            <div class="item">
+                                <span>付款时间</span>
+                                <p>2017-04-24 11::08:59</p>
+                            </div>
+                            <div class="item">
+                                <span>商品总额</span>
+                                <p>￥30.00</p>
+                            </div>
+                            <div class="item">
+                                <span>应支付总额</span>
+                                <p>￥30.00</p>
+                            </div>
+                            <div class="item">
+                                <span>运费金额</span>
+                                <p>￥30.00</p>
+                            </div>
+                            <div class="item">
+                                <span>优惠券</span>
+                                <p>￥30.00</p>
+                            </div>
+                            <div class="item">
+                                <span>返现</span>
+                                <p>￥30.00</p>
+                            </div>
+                            <div class="item">
+                                <span>礼品卡</span>
+                                <p>￥30.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dl">
+                        <div class="dt"><h4>发票信息</h4></div>
+                        <div class="dd">
+                            <div class="item">
+                                <span>发票类型</span>
+                                <p>不开发票</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="minitor-list-goods">
+                    <table>
+                        <tr class="tit">
+                            <th>商品</th>
+                            <th>商品编号</th>
+                            <th>带路者价格</th>
+                            <th>商品数量</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;"><img
+                                        src="//img10.360buyimg.com/N1/s60x60_jfs/t8824/279/349635431/203598/842ca563/59a64f92N987482c0.jpg"
+                                        alt=""></a>
+                                <a href="javascript:;">先锋（Singfun） 取暖器/家用电暖器/电暖气/11片电热油汀 DS6111</a>
+                            </td>
+                            <td>011406886</td>
+                            <td>￥30.00</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;"><img
+                                        src="//img10.360buyimg.com/N1/s60x60_jfs/t8824/279/349635431/203598/842ca563/59a64f92N987482c0.jpg"
+                                        alt=""></a>
+                                <a href="javascript:;">先锋（Singfun） 取暖器/家用电暖器/电暖气/11片电热油汀 DS6111</a>
+                            </td>
+                            <td>011406886</td>
+                            <td>￥30.00</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li><p>商品总金额<span>￥500.00</span></p></li>
+                        <li><p>返现<span>￥0.00</span></p></li>
+                        <li><p>运费<span>￥10.00</span></p></li>
+                        <li><p>应付总额<span>￥510.00</span></p></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!--主要内容 end-->
+
+<!--尾部-->
+<div class="footer w">
+    <!--帮助-->
+    <div class="help ">
+        <div class="help-nav">
+            <h5>购物指南</h5>
+            <ul>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>配送方式</h5>
+            <ul>
+                <li><a href="#">配送服务查询</a></li>
+                <li><a href="#">配送费收取标准</a></li>
+                <li><a href="#">海外配送</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>支付方式</h5>
+            <ul>
+                <li><a href="#">信用证</a></li>
+                <li><a href="#">前T／T</a></li>
+                <li><a href="#">后T／T</a></li>
+                <li><a href="#">Palpal</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>售后服务</h5>
+            <ul>
+                <li><a href="#">售后政策</a></li>
+                <li><a href="#">价格保护</a></li>
+                <li><a href="#">退款说明</a></li>
+                <li><a href="#">返修／退换货</a></li>
+                <li><a href="#">取消订单</a></li>
+            </ul>
+        </div>
+    </div><!--帮助 end-->
+    <!--外链-->
+    <div class="links">
+        <p>
+            <a href="#">关于我们</a><span>|</span><a href="#">联系我们</a><span>|</span><a href="#">联系客服</a><span>|</span><a
+                href="#">商家入驻</a><span>|</span><a href="#">营销中心</a><span>|</span><a href="#">手机带路者</a><span>|</span><a
+                href="#">友情链接</a><span>|</span><a href="#">销售联盟</a><span>|</span><a href="#">风险监测</a>
+        </p>
+        <img src="../image/footer-links.png" alt="">
+    </div><!--外链 end-->
+    <!--信息-->
+    <div class="copyright">
+        <p><span>京ICP备16041296号-1&nbsp; |&nbsp; Copyright&nbsp; &nbsp;<span class="copyright-c">©</span> 2016, Silkwalks, All Rights Reserved</span>
+        </p>
+    </div><!--信息 end-->
+</div><!--尾部 end-->
+</body>
+</html>

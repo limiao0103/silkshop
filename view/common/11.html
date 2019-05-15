@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function tab_nav(nav) {
+        $.getJSON("获取json链接地址", function (data) {
+            $.each(data.gamelists, function (i, item) {
+                $("#list1_info").append("<li><div class=\"game_img\"><a href=" + decodeURIComponent(item.opengame_url) + "><img src=" + decodeURIComponent(item.icon_url) + "></a></div><div class=\"game_content\"><h1><a href=" + decodeURIComponent(item.opengame_url) + ">" + item.zh_name + "</a></h1><div class=\"star_w\"><p style=\"width:40%\"></p></div><span>人气：" + item.clicks + "</span><div class=\"game_cwz\">" + item.brief + "</div></div><div class=\"game_button\"><a href=" + decodeURIComponent(item.opengame_url) + ">开始游戏</a></div></li>");
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

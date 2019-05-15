@@ -1,0 +1,117 @@
+/*商品比较页样式*/
+.compare-cont{padding-bottom:30px}
+.compare-main{position: relative;width:100%;padding-top:20px;padding-bottom:29px}
+.p-slider{position:relative;width:152px;height:32px;padding:0 22px}
+.p-slider .slider-next,.p-slider .slider-prev{position:absolute;top:8px;width:10px;height:16px;overflow:hidden;cursor:pointer}
+.p-slider .slider-prev{left:0}
+.p-slider .slider-next{right:0;background-position:-10px 0}
+/*.p-slider .slider-disable{cursor:default}*/
+.p-slider .slider-main{position:relative;width:100%;height:32px;overflow:hidden}
+.p-slider .slider-list{position:absolute;left:0;top:0;float:left;height:32px}
+.p-slider .slider-list li{float:left;width:30px;height:30px;padding:1px;margin-right:8px;cursor:pointer}
+.p-slider .slider-list li.item-hover{padding:0;border:1px solid #e4393c}
+.goods-item{width:200px;margin:0 auto}
+.goods-item .p-img{width:100%;height:160px;text-align:center}
+.goods-item .p-name{width:100%;height:32px;overflow:hidden;margin-top:10px;line-height:16px}
+.goods-item .p-price{width:100%;height:28px;line-height:28px;margin-top:10px;font-size:14px;color:#1d7cb9}
+.goods-item .p-price strong{font-size:20px;font-weight:400}
+.goods-item .p-btnbox{position:relative;width:100%;height:30px}
+.goods-item .p-btnbox .btn-primary{height:30px;line-height:30px;border-radius:5px;background:#1d7cb9;color: #fff;padding: 5px 2px }
+.goods-item .p-btnbox .btn-primary .btntxt{height:30px}
+.goods-item .p-btnbox .btn-del{display: none;position:absolute;right:-8px;top:5px;font:12px/20px SimSun}
+.goods-item:hover .btn-del{display: block}
+.choose-box1 li{float:left;height:40px;line-height:40px;padding-left:40px;padding-right:8px;border:1px solid #d7d7d7;margin:0 6px 6px 0;background:#f7f7f7;}
+.choose-box1 .cs-img{float:left;width:38px;height:38px;padding:1px;margin-left:-40px;margin-right:5px;_display:inline;background:#fff;text-align:center}
+.choose-box1 img{vertical-align:top}
+.choose-box2 li{float:left;height:29px;line-height:29px;padding:0 13px;border:1px solid #d7d7d7;margin-right:6px;margin-bottom:6px;cursor:pointer}
+.choose-box1,.choose-box2{width:200px;padding-left:8px;_width:208px;_margin-right:-8px;overflow:hidden}
+.choose-box1 li,.choose-box2 li{overflow:hidden}
+.choose-box1 li.choose-hover,.choose-box2 li.choose-hover{border-color:#e4393c}
+.choose-box1 li.choosed,.choose-box2 li.choosed{border-color:#e4393c;cursor:default}
+.choose-box1 li.choosed a,.choose-box2 li.choosed a{cursor:default}
+.choose-box1 li.choose-disable,.choose-box2 li.choose-disable{border-style:dashed;cursor:not-allowed}
+.choose-box1 li.choose-disable a,.choose-box2 li.choose-disable a{color:#999;cursor:not-allowed}
+.choose-box1 li.choose-disable a:hover,.choose-box2 li.choose-disable a:hover{color:#999}
+.root61 .choose-box1,.root61 .choose-box2{_width:235px;_margin-right:-35px;padding-left:35px}
+.compare-table1,.compare-table2{width:100%;border-collapse:collapse;table-layout:fixed;border-top:1px solid #e4e4e4;border-left:1px solid #e4e4e4;margin-top:-1px}
+.compare-table1 #goodsInfo tr{height: 178px}
+.compare-table1 #goodsInfo td{height: 178px}
+.compare-table1 .cont-col,.compare-table2 .cont-col{width:217px}
+.compare-table1 td,.compare-table1 th,.compare-table2 td,.compare-table2 th{border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;line-height:24px;background:#fff}
+.compare-table1 th,.compare-table2 th{width:150px;text-align:left;font-weight:400;background:#f7f7f7;color:#999}
+.compare-table1 .p-shop,.compare-table2 .p-shop{width:200px;margin:0 auto;height:18px;overflow:hidden}
+.compare-table1 .p-shop a,.compare-table2 .p-shop a{float:left;width:141px;height:18px;line-height:18px;margin-right:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.compare-table1 .p-shop .u-jd,.compare-table2 .p-shop .u-jd{float:right}
+.compare-table1 .p-evaluate,.compare-table2 .p-evaluate{position:relative;width:135px;padding-left:65px;min-height:60px;_height:60px;margin:0 auto}
+.compare-table1 .p-score,.compare-table2 .p-score{position:absolute;left:0;top:0;width:65px;height:34px}
+.compare-table1 .p-score .num,.compare-table2 .p-score .num{_position:relative;display:block;width:65px;color:#1d7cb9;height:24px;padding-top:10px;margin-top:-10px;margin-bottom:6px;font:18px/24px "Microsoft YaHei"}
+.compare-table1 .p-score strong,.compare-table2 .p-score strong{float:left;height:34px;margin-top:-10px;font:26px/34px "Microsoft YaHei"}
+.compare-table1 .p-score .tit,.compare-table2 .p-score .tit{height:20px;line-height:20px}
+.compare-table1 .p-tags,.compare-table2 .p-tags{width:145px;margin-right:-10px;overflow:hidden}
+.compare-table1 .p-tags em,.compare-table2 .p-tags em{float:left;height:20px;line-height:20px;padding:0 6px;margin-right:6px;margin-bottom:10px;background:#f2f4ff}
+.compare-table1 .p-comment,.compare-table2 .p-comment{width:135px;line-height:20px;padding-left:65px;margin:0 auto}
+.compare-table1 .p-comment .tit,.compare-table2 .p-comment .tit{float:left;width:65px;margin-left:-65px;_display:inline}
+.compare-table1 .tb-subtit,.compare-table2 .tb-subtit{height:20px;line-height:20px;padding-left:20px;color:#666;font-size:12px}
+.compare-table1 .tb-subtit .i-fold,.compare-table2 .tb-subtit .i-fold{float:left;width:15px;height:15px;margin-top:3px;margin-right:10px}
+.compare-table1 .tb-checkbox,.compare-table2 .tb-checkbox{margin-left:10px;margin-bottom:10px}
+.compare-table1 .tb-checkbox input,.compare-table2 .tb-checkbox input{margin-right:5px;vertical-align:middle}
+.compare-table1 .tb-checkbox label,.compare-table2 .tb-checkbox label{display:inline-block;height:16px;line-height:16px;vertical-align:middle;color:#666}
+.compare-table1 .tb-text,.compare-table2 .tb-text{width:200px;overflow:hidden;word-wrap:break-word}
+.compare-table1 .tr-item td,.compare-table2 .tr-item td{padding:20px 0 16px}
+.compare-table1 .tr-item .tb-text,.compare-table2 .tr-item .tb-text{padding:0 0 0 25px}
+.compare-table1 .tr-item th,.compare-table2 .tr-item th{padding:0;text-align:right}
+.compare-table1 .tr-item .tb-title,.compare-table2 .tr-item .tb-title{margin-right:26px}
+.compare-table1 .tr-differ td,.compare-table2 .tr-differ td{background:#f4f9fd}
+.compare-table1 .tr-equal,.compare-table1 .tr-equal td,.compare-table1 .tr-equal th,.compare-table1 .tr-hide,.compare-table1 .tr-hide td,.compare-table1 .tr-hide th,.compare-table2 .tr-equal,.compare-table2 .tr-equal td,.compare-table2 .tr-equal th,.compare-table2 .tr-hide,.compare-table2 .tr-hide td,.compare-table2 .tr-hide th{display:none}
+.compare-table1 .tr-category th,.compare-table2 .tr-category th{height:48px}
+.compare-table1 .tr-category.z-cate-close .i-fold,.compare-table2 .tr-category.z-cate-close .i-fold{background-position:0 -20px}
+.compare-table1 .goods-comment td,.compare-table2 .goods-comment td{vertical-align:top}
+.compare-table1 .add-item{text-align:center}
+.compare-table1 td,.compare-table1 th{padding:20px 0 16px;width:150px}
+.compare-table2{_border-bottom:1px solid #e4e4e4}
+.root61 .compare-table1 .cont-col,.root61 .compare-table2 .cont-col{width:271px}
+.root61 .compare-table1 .p-tags,.root61 .compare-table2 .p-tags{width:155px;margin-right:-20px}
+.root61 .compare-table1 .p-tags em,.root61 .compare-table2 .p-tags em{margin-right:10px}
+.root61 .compare-table2 .tr-item .tb-text{padding-left:35px}
+.compare-goods{background:#fff}
+
+/*滚动鼠标商品基础信息固定顶部显示*/
+.compare-fix {width: 1198px;height: 140px;position: fixed;top:0;margin: 0 auto;border: 1px solid #eee;background: #fff;z-index: 9999;display: none}
+.compare-fix .fix-tit{width: 178px;height: 140px;line-height: 140px;float: left;border-right: 1px solid #eee;background: #f7f7f7}
+.compare-fix .fix-list{width: 1018px;height: 140px;float: right}
+.compare-fix .fix-list li{width: 253px;height: 100%;border-right:1px solid #eee;float: left}
+.compare-fix .fix-list li:nth-child(2){width: 255px}
+.compare-fix .fix-list li:nth-child(2){width: 256px}
+.compare-fix .fix-list li:nth-child(4){border-right: none}
+.compare-fix .fix-list li .contrast-image {display: block;height: 105px;width: 105px;float: left;margin: 15px 5px 15px 15px;border: 1px solid #eee}
+.compare-fix .fix-list li .contrast-image img{width: 100%;height: 100%}
+.compare-fix .fix-list .contrast-drc {margin: 15px 10px 0 0}
+.compare-fix .fix-list .contrast-drc h5{overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.compare-fix .fix-list .contrast-drc p{line-height: 16px;height: 60px;overflow: hidden;margin: 4px 0}
+.compare-fix .fix-list .contrast-drc span{display: block;color: #1d7cb9}
+/*滚动鼠标商品基础信息固定顶部显示 end*/
+
+/*添加对比商品栏*/
+.compare-add{width: 1192px;height: 368px;position: absolute;z-index: 10000;overflow: hidden;top: 300px;left: 0;border: 4px solid rgba(0,0,0,.1);background: #fff;display: none }
+.compare-add .compare-add-tit{position: relative;padding: 0 10px;height: 31px;line-height: 31px;background: #f3f3f3;font-size: 14px;color: #666;}
+.compare-add .compare-add-tit h4{display: inline-block}
+.compare-add .compare-add-tit a{margin-left: 10px;font-size: 12px;color: #005ea7;font-weight: 400;}
+.compare-add .close-compare-add{cursor: pointer;display: block;position: absolute;z-index: 100000;top: 8px;right: 10px;text-decoration: none;font-size: 15px}
+.compare-add ul{overflow: hidden}
+.compare-add ul li{position: relative;float: left;width: 16%;height: 320px;background: #fff;margin:8px 5px 10px 0;border: 1px solid #eee;border-radius: 2px}
+.compare-add ul li:nth-child(1){margin-left: 5px}
+.compare-add ul li:hover{box-shadow: rgb(248,248,248)0 0 4px 4px;border-color: rgb(223,223,223)}
+.compare-add ul li .goods-product-logo{width: 60px;height:35px;display: block;position: absolute;top: 10px;left: 10px;z-index: 9;background-image: url("../image/goods-logonew.png");background-size: 100% 100%}
+.compare-add ul li .product-image{width: 90%;margin: 0 auto;height: 180px}
+.compare-add ul li .product-image img{width: 100%;height: 100%}
+.compare-add ul li .product-img{width: 90%;height: 150px;margin: 10px auto;}
+.compare-add ul li .product-img img{width: 100%;height: 100%}
+.compare-add ul li .product-name{width: 90%;margin: 10px auto 2px}
+.compare-add ul li .product-name a{text-decoration: none}
+.compare-add ul li .product-name span{display: block;width: 100%;color: #1d7cb9;font-size: 16px;overflow:hidden; white-space:nowrap;text-overflow:ellipsis;line-height: 20px}
+.compare-add ul li .product-name p{width: 100%;height: 44px;line-height: 22px;overflow: hidden;color: #666;margin-top: 5px}
+.compare-add ul li .priduct-add-btn{text-align: center;margin-top: 15px}
+.compare-add ul li .priduct-add-btn a{display: inline-block;width: 80px;height: 25px;line-height: 25px;background: #1d7cb9;border-radius: 5px;color: #fff;text-decoration: none}
+
+
+

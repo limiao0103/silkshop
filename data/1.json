@@ -1,0 +1,81 @@
+{
+  "classifyOne":[
+    {"id":"1",
+      "image": "assets/img/home-product-sidebar-icon-jz.png",
+      "onetit":"建筑建材"
+    },
+    {"id":"2",
+      "image": "assets/img/home-product-sidebar-icon-gc.png",
+      "onetit":"建筑钢材"
+    },
+    {"id":"3",
+      "image": "assets/img/home-product-sidebar-icon-dj.png",
+      "onetit":"灯具灯饰"
+    },
+    {"id":"4",
+      "image": "assets/img/home-product-sidebar-icon-wy.png",
+      "onetit":"卫浴洁具"
+    },
+    {"id":"5",
+      "image": "assets/img/home-product-sidebar-icon-jz.png",
+      "onetit":"家装建材"
+    },
+    {"id":"6",
+      "image": "assets/img/home-product-sidebar-icon-jj.png",
+      "onetit":"家具家私"
+    }
+  ],
+  "classifysecon":[
+    {
+      "seconid":"1",
+      "secontit":"工程施工",
+      "threelevel":[
+        {"threetit":"玻璃钢"},
+        {"threetit":"脚手架"},
+        {"threetit":"钢筋"},
+        {"threetit":"水泥"},
+        {"threetit":"活动房"},
+        {"threetit":"管道系统"},
+        {"threetit":"灌浆料"},
+        {"threetit":"景观工程"},
+        {"threetit":"喷泉水晶"},
+        {"threetit":"装修设置"},
+        {"threetit":"装修施工"},
+        {"threetit":"步步紧"},
+        {"threetit":"景观雕塑"}
+      ]
+    }
+  ],
+  "publicity":[
+    {
+      "pubid":"1",
+      "pubsrc":"//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg",
+      "pubtit":"智能安全解决方案",
+      "pubdes":"智能安全安防系统是集信息技术、网路技术、传感器技术、模糊控制的技术"
+    },
+    {
+      "pubid":"2",
+      "pubsrc":"//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg",
+      "pubtit":"智能家居解决方案",
+      "pubdes":"智能家居安防系统是集信息技术、网路技术、传感器技术、模糊控制的技术"
+    },
+    {
+      "pubid":"3",
+      "pubsrc":"//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg",
+      "pubtit":"建筑工程解决方案",
+      "pubdes":"建筑工程安防系统是集信息技术、网路技术、传感器技术、模糊控制的技术"
+    },
+    {
+      "pubid":"4",
+      "pubsrc":"//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg",
+      "pubtit":"工业工程解决方案",
+      "pubdes":"工业工程安防系统是集信息技术、网路技术、传感器技术、模糊控制的技术"
+    },
+    {
+      "pubid":"5",
+      "pubsrc":"//img11.360buyimg.com/n7/jfs/t7192/222/2287776920/102924/3ca7d202/59941f74Nab9712af.jpg",
+      "pubtit":"智能安全解决方案",
+      "pubdes":"智能家居安防系统是集信息技术、网路技术、传感器技术、模糊控制的技术"
+    }
+  ]
+}

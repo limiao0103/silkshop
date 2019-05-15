@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换货单详情</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/center.css">
+    <link rel="stylesheet" href="../css/foundation-datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/foundation-datepicker.js"></script>
+    <script>
+        $(function () {
+            var $div_li = $(".order-tit>li");
+            $div_li.click(function () {
+                $(this).addClass("act_active")            //当前<li>元素高亮
+                    .siblings().removeClass("act_active");  //去掉其它同辈<li>元素的高亮
+                var index = $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+                $(".order-list > table")       //选取子节点。不选取子节点的话，会引起错误。如果里面还有div
+                    .eq(index).show()   //显示 <li>元素对应的<div>元素
+                    .siblings('table').hide(); //隐藏其它几个同辈的<div>元素
+            });
+
+            //日期调用
+            $('#deliveryDate').fdatepicker()
+
+            //扩展信息弹框 显示
+            $('.extend-infor').click(function () {
+                $('.extend-infor-box').show()
+            });
+            //附件查看弹框 显示
+            $('.view').click(function () {
+                $('.view-box').show()
+            });
+            //扩展信息弹框 关闭
+            $('.extend-infor-btn').click(function () {
+                $('.extend-infor-box').hide()
+            });
+            //附件查看弹框 显示
+            $('.view-box-btn a').click(function () {
+                $('.view-box').hide()
+            })
+        })
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--登录条-->
+    <div class="loginbar w">
+        <div class="language">
+            <span>语种&nbsp;<i><em></em></i></span>
+            <ul class="language-hidden">
+                <li>中文</li>
+                <li>英文</li>
+                <li>阿拉伯文</li>
+            </ul>
+        </div>
+        <p class="banner">你好，欢迎来到带路者！</p>
+        <div class="siginarea">
+            <a href="login.html" class="login">登录</a>
+            <a href="register-suppliers.html" class="regsiter">注册</a>
+            <a href="#" class="logout">注销</a>
+            <a href="help.html">帮助中心</a>
+            <div class="center">
+                <span>我的带路者<i><em></em></i></span>
+                <ul class="center-hidden">
+                    <li><a href="center-order.html">我的订单</a></li>
+                    <li><a href="center-pay.html">我的支付</a></li>
+                    <li><a href="center-inquiry-sheet.html">我的询盘单</a></li>
+                    <li><a href="center-inquiry-car.html">我的询盘车</a></li>
+                    <li><a href="center-favorites.html">我的收藏夹</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--登录条 end-->
+    <!--功能区-->
+    <div class="shop w">
+        <h1 class="logo">
+            <a href="../home.html">
+                <img src="../image/header-logo.png" alt="">
+            </a>
+        </h1>
+        <div class="seach">
+            <input type="text"><span>搜索</span>
+        </div>
+        <!--询盘车-->
+        <div class="shop-car">
+            <div class="J-shoping J-shoping-small">
+                <div class="J-shoping-item">
+                    <div class="baseBg J-L-ico J-shoping-pos"></div>
+                    <div class="J-shoping-main">
+                        <div class="J-shoping-title">
+                            <a href="#" title="" class="J-go"><em class="baseBg"></em>询盘车</a>
+                            <span class="baseBg J-shoping-num">	0</span>
+                        </div>
+                        <div class="baseBg J-shoping-mx"></div>
+                        <div class="J-shoping-body">
+                            <div class="J-shoping-buy">
+                                <span>最多显示最新<strong>5</strong>条</span>
+                                <a class="baseBg" href="#" title="去询盘">去询盘</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baseBg J-R-ico J-shoping-pos"></div>
+                </div>
+            </div>
+        </div>
+
+    </div><!--功能区 end-->
+</div><!--头部 end-->
+
+<!--二级导航-->
+<div class="second-nav">
+    <div class="w">
+        <ul>
+            <li><a href="../home.html">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+            <li><a href="center-exchange.html">换货单</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+            <li><a href="javascript:;">换货单详情</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+        </ul>
+    </div>
+</div><!--二级导航 end-->
+
+<!--主要内容-->
+<div class="w">
+    <div class="main">
+        <!--侧导航-->
+        <div class="selidebar">
+            <h4>我的带路者</h4>
+            <ul>
+                <li><a href="center-order.html">我的订单</a></li>
+                <li><a href="center-pay.html">我的支付</a></li>
+                <li><a href="center-inquiry-sheet.html">我的询盘单</a></li>
+                <li><a href="center-inquiry-car.html">我的询盘车</a></li>
+                <li><a href="center-favorites.html">我的收藏夹</a></li>
+            </ul>
+            <h4>客户服务</h4>
+            <ul>
+                <li><a href="center-sales-return.html">我的退货</a></li>
+                <li><a href="center-exchange.html">我的换货</a></li>
+                <li><a href="center-receive-goods.html">我的收货</a></li>
+                <li><a href="center-appraise.html">我的评价</a></li>
+            </ul>
+        </div><!--侧导航 end-->
+        <div class="content">
+            <!--小标题-->
+            <div class="content-tit">
+                <h4>换货单详情</h4>
+            </div><!--小标题 end-->
+            <div class="order-main inquiry-main">
+                <div class="immediate-des">
+                    <p>换货单编码：<span>5845658111111111</span></p>
+                    <p>换货单标题：<span>电视机询价</span></p>
+                    <p>关联订单：<span>电视机询价</span></p>
+                    <p>订单类型：<span>正常订单</span></p>
+                    <p>销售用户：<span>带路者科技有限公司</span></p>
+                    <p>客户名称：<span>华彬股份有限公司</span></p>
+                    <p>所在国别：<span>美国</span></p>
+                    <p>运抵港口：<span>港口1</span></p>
+                    <p>收货地址：<span>America</span></p>
+                    <p>付款方式：<span>电子转帐</span></p>
+                    <p>收货联系人：<span>小云</span></p>
+                    <p>收货人电话：<span>13782068888</span></p>
+                    <p>订单合同号：<span>68468364849</span></p>
+                    <p>贸易方式：<span>方式1</span></p>
+                    <p>换货单金额：<span>10000</span></p>
+                    <p>金额单位：<span>￥</span></p>
+                    <p>换货单备注：<span>备注1</span></p>
+                    <p>换货人：<span>小刘</span></p>
+                    <p>换货日期：<span>2017-1-3</span></p>
+                    <p class="monitoring-btn" style="width: 70px"><a href="center-exchange-monitor.html">换货单监控</a></p>
+                </div>
+                <ul class="order-tit">
+                    <li class="act_active"><a href="javascript:;">产品信息</a></li>
+                </ul>
+                <div class="order-list" style="height: 320px">
+                    <!--产品信息-->
+                    <table style="display: block">
+                            <tr class="tit">
+                                <th class="th1">产品编码</th>
+                                <th class="th2">产品名称</th>
+                                <th class="th1">产品规格</th>
+                                <th class="th1">产品型号</th>
+                                <th class="th1">产品材质</th>
+                                <th class="th2">采购价格(不含税)</th>
+                                <th class="th1">计量单位</th>
+                                <th class="th1">换货数量</th>
+                                <th class="th2">操作</th>
+                            </tr>
+                            <tr>
+                                <td><span><a href="goods-detail.html">11111111</a></span></td>
+                                <td>乐视TV超4 X50 Pro</td>
+                                <td><span>50寸</span></td>
+                                <td><span>4K超清电视</span></td>
+                                <td><span>材质1</span></td>
+                                <td><span>100000</span></td>
+                                <td><span>台</span></td>
+                                <td><span>10000</span></td>
+                                <td><span>备注的信息</span></td>
+                            </tr>
+                    </table><!--产品信息 end-->
+
+                    <!--下边操作栏-->
+                    <div class="order-list-bottom" style="text-align: center">
+                        <a href="center-exchange.html" class="last">返回</a>
+                    </div><!--下边操作栏 end-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!--主要内容 end-->
+
+<!--尾部-->
+<div class="footer w">
+    <!--帮助-->
+    <div class="help ">
+        <div class="help-nav">
+            <h5>购物指南</h5>
+            <ul>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>配送方式</h5>
+            <ul>
+                <li><a href="#">配送服务查询</a></li>
+                <li><a href="#">配送费收取标准</a></li>
+                <li><a href="#">海外配送</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>支付方式</h5>
+            <ul>
+                <li><a href="#">信用证</a></li>
+                <li><a href="#">前T／T</a></li>
+                <li><a href="#">后T／T</a></li>
+                <li><a href="#">Palpal</a></li>
+            </ul>
+        </div>
+        <div class="help-nav">
+            <h5>售后服务</h5>
+            <ul>
+                <li><a href="#">售后政策</a></li>
+                <li><a href="#">价格保护</a></li>
+                <li><a href="#">退款说明</a></li>
+                <li><a href="#">返修／退换货</a></li>
+                <li><a href="#">取消订单</a></li>
+            </ul>
+        </div>
+    </div><!--帮助 end-->
+    <!--外链-->
+    <div class="links">
+        <p>
+            <a href="#">关于我们</a><span>|</span><a href="#">联系我们</a><span>|</span><a href="#">联系客服</a><span>|</span><a
+                href="#">商家入驻</a><span>|</span><a href="#">营销中心</a><span>|</span><a href="#">手机带路者</a><span>|</span><a
+                href="#">友情链接</a><span>|</span><a href="#">销售联盟</a><span>|</span><a href="#">风险监测</a>
+        </p>
+        <img src="../image/footer-links.png" alt="">
+    </div><!--外链 end-->
+    <!--信息-->
+    <div class="copyright">
+        <p><span>京ICP备16041296号-1&nbsp; |&nbsp; Copyright&nbsp; &nbsp;<span class="copyright-c">©</span> 2016, Silkwalks, All Rights Reserved</span>
+        </p>
+    </div><!--信息 end-->
+</div><!--尾部 end-->
+</body>
+</html>

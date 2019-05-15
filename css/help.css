@@ -1,0 +1,52 @@
+/*帮助中心样式*/
+.help-main{border: 1px solid #eee;padding: 50px 30px;box-shadow: 0 0 5px #eee;overflow: hidden;}
+.help-main .left{width: 15%;border: 1px solid #eee;float: left}
+.help-main .left .nav-list>li{line-height: 30px;text-align: center;background: #f2f2f2;box-shadow: 2px 0 5px #eee;border-bottom: 2px solid #eee;cursor: pointer;margin-bottom: 2px}
+.help-main .left .nav-list>li:nth-child(1){text-align: left;padding-left: 35px}
+.help-main .left .nav-list>li h4{font-size: 14px;font-weight: normal}
+.help-main .left .nav-list>li h4 em{width: 11px;height: 12px;display: inline-block;background: url("../image/help-nav.png")no-repeat -4px -143px;margin-left: 10px }
+.help-main .left .nav-list>li h4 i{width: 13px;height:13px;display: inline-block;background: url("../image/help-nav.png")no-repeat -1px 0 ;margin-right: 10px}
+.help-main .left .nav-list>li h4 i.help-attention-icon{background: url("../image/help-nav.png")no-repeat 0 -18px}
+.help-main .left .nav-list>li h4 i.help-shop-icon{background: url("../image/help-nav.png")no-repeat -1px -132px}
+.help-main .left .nav-list>li h4 i.help-pay-icon{background: url("../image/help-nav.png")no-repeat -1px -119px}
+.help-main .left .nav-list>li h4 i.help-logistics-icon{background: url("../image/help-nav.png")no-repeat -1px -105px}
+.help-main .left .nav-list>li h4 i.help-sample-icon{background: url("../image/help-nav.png")no-repeat -2px -91px}
+.help-main .left .nav-list>li h4 i.help-features-icon{background: url("../image/help-nav.png")no-repeat 0 -76px}
+.help-main .left .nav-list>li h4 i.help-service-icon{background: url("../image/help-nav.png")no-repeat -1px -47px}
+.help-main .left .nav-list>li h4 i.help-member-icon{background: url("../image/help-nav.png")no-repeat 0 -64px}
+.help-main .left .nav-list>li h4 i.help-aftersale-icon{background: url("../image/help-nav.png")no-repeat -1px -34px}
+.help-main .left .nav-list>li .hide-list{height: 150px;width: 100%;background: #fff;border: 1px solid #eee;display: none}
+.help-main .left .nav-list>li .hide-list a{display: block}
+.rotate{ transform: rotate(90deg);-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);}
+.help-main .right{width: 80%;height: 500px;float: right}
+.help-main .right .item{display: none}
+.help-main .right .content-tit{position: relative;width: 100%;height: 35px;line-height: 35px;background: #f2f2f2;font-size: 16px;color: #999;border: 1px solid #e4e4e4}
+.help-main .right .content-tit h4{margin-left: 20px;font-weight: normal}
+.help-main .right .content-main{position: relative;margin-top: 5px;border: 2px solid #e4e4e4}
+.help-main .right .content-main .content-main-tit{width: 100%;height: 30px;line-height: 30px;background: #f7f7f7;border-bottom: 2px solid #1d7fc5}
+.help-main .right .content-main .content-main-tit li{float: left;padding:0 20px;font-size: 14px;color: #6e6e6e }
+.help-main .right .content-main .content-main-list{width: 100%;height:350px;overflow-x: auto;overflow-y: auto}
+.help-main .right .content-main .content-main-list>div{margin: 20px 100px;display: none}
+.act_active{display: block;background: #1d7fc5}
+.act_nav{color: #1d7fc5}
+.act_active>a{color: #fff}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

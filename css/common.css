@@ -1,0 +1,123 @@
+/*公共部分样式*/
+@charset "utf-8";
+body{background: #fff}
+.w{width: 1200px;margin: 0 auto}
+.clear{ clear:both}
+/*头部*/
+.header{width: 100%;height: auto;background: #f8f8f8}
+.header .loginbar{height: 40px;line-height: 40px;color: #666}
+.header .loginbar .language{display: inline-block;margin-left: 53%;margin-right: 5%;position: relative}
+.header .loginbar .language:hover .language-hidden{display:block}
+.header .loginbar .language span{display: inline-block;height: 40px;position: relative    }
+.header .loginbar .language span i{width: 0;height: 0;border: 6px solid transparent;border-top:6px  solid #707070;position: absolute;top: 17px;left: 28px}
+.header .loginbar .language span i em{width: 0;height: 0;border: 6px solid transparent;border-top:6px  solid #f8f8f8;position: absolute;top: -8px;left: -5px}
+.header .loginbar .language ul{border:  1px solid #1d7cb9;background: #fff;position: absolute;top: 30px;display: none;    z-index: 999}
+.header .loginbar .language ul li{width: 70px;height:25px;line-height: 25px;text-align: center}
+.header .loginbar .language ul li:hover{background: #1d7cb9}
+.header .loginbar .language ul li:hover a{color: #fff}
+.header .loginbar .banner{display: inline-block;margin-right: 10px}
+.header .loginbar .siginarea{float: right;width: 27%;height: 40px; text-align: right}
+.header .loginbar a{display: inline-block;margin: 0 2%}
+.header .loginbar .center{display: inline-block;width: 90px;position: relative;text-align: left}
+.header .loginbar .center span i{width: 0;height: 0;border: 6px solid transparent;border-top:6px  solid #707070;position: absolute;top: 17px;left: 65px}
+.header .loginbar .center span i em{width: 0;height: 0;border: 7px solid transparent;border-top:6px  solid #f8f8f8;position: absolute;top: -8px;left: -6px}
+.header .loginbar .center:hover .center-hidden{display: block}
+.header .loginbar .center .center-hidden{border:  1px solid #1d7cb9;background: #fff;position: absolute;top: 30px;left: 18px;display: none;z-index: 999}
+.header .loginbar .center ul li{width: 70px;height:25px;line-height: 25px;color: #9fa0a0;text-align: center}
+.header .loginbar .center ul li:hover{background: #1d7cb9;color: #fff}
+.header .loginbar .center ul li:hover a{color: #fff;text-decoration: none}
+.header .shop{height: 80px}
+.header .shop .logo{width: 157px;height: 96px;float: left;margin-top: -20px}
+.header .shop .logo img{width: 100%;height: 100%}
+.header .shop .seach{position: relative;width: 677px;height: 38px;float: left;margin:20px 0 0 80px}
+.header .shop .seach input{position: absolute;left:0;width: 673px;height: 42px;border: 2px solid #1d7cb9;float: left}
+.header .shop .seach span{position: absolute;right:0;width: 71px;height: 44px;background: #1d7cb9;float: right;line-height: 42px;color: #fff;text-align: center;font-size: 16px}
+.header .shop .shop-car{position: relative;width: 126px;height: 20px;border: 1px solid #1d7cb9;float: right;margin-top: 24px;padding: 7px 10px}
+/*头部 end*/
+
+/*二级导航*/
+.second-nav{width: 100%;background: #eee;height: 40px}
+.second-nav .service{float: right;line-height: 40px;position: relative}
+.second-nav .service a{position: absolute;top: 7px;right: 0}
+.second-nav .service span{margin-right: 30px}
+.second-nav ul{float: left;line-height: 40px}
+.second-nav ul li{float: left}
+/*二级导航 end*/
+
+/*询盘车*/
+.J-shoping{height:34px;bottom:0;z-index:900;position: absolute;left: 0;top: 0}
+*html .J-shoping{position:absolute;margin:500px 0 0 0;}
+.J-shoping-item{position:relative;height:34px}
+.J-shoping-pos{position:absolute;width:6px;height:34px;z-index:920;top:-3px}
+.J-L-ico{background-position:-55px -84px;left:0}
+.J-R-ico{background-position:-66px -84px;right:0}
+.J-shoping-main{position:relative}
+.J-shoping-title{height:27px;cursor:pointer;line-height:27px;padding: 4px 10px 4px 30px;position:relative;z-index:920}
+.J-shoping-title .J-go{color:#0363BD;display:block;float:left}
+.J-shoping-title .J-go em{display:inline-block;width:17px;height:17px;vertical-align:middle;margin:-2px 10px 0 0;background: url("../image/header-shopcar.png")no-repeat;background-size: 100% 100%}
+.J-shoping-num{width:14px;height:14px;text-align:center;overflow:hidden;line-height:14px;display:block;position:absolute;left:93px;top:7px;color:#fff;font-size:10px;border-radius: 50%;background:red }
+.J-shoping-body{width:255px;max-height:360px;overflow-y: auto;display:none;border:solid 1px #1d7cb9;padding:10px 10px 30px 10px ;position:absolute;right: 0;top:34px;z-index:910;background: #fff}
+.J-shoping-list{padding:5px;color:#999;border:solid 1px #e3e3e3;background:#fff;height:50px;margin-bottom:10px;position:relative;}
+.J-shoping-list-remove{background:#ffd2d3}
+.J-shoping-list img{float:left}
+.J-shoping-list-a{float:right;width:175px}
+.J-shoping-list-a p{width: 180px;height:47px;line-height:16px;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden}
+.J-shoping-list-a p em{color:#0363BD;font-weight:bold;margin-right:3px}
+.J-shoping-close{position:absolute;cursor:pointer;right:5px;top:5px;width:11px;height:11px;overflow:hidden;background-image: url("../image/car-delet.png");background-size: 100% 100%}
+.J-shoping-buy{height:26px;position: absolute;width: 95%;background: #fff}
+.J-shoping-buy span{float:left;color:#555}
+.J-shoping-buy a{width:80px;height:26px;display:block;float:right;margin-right: 25px;background: #0363BD;color: #fff;text-align: center;line-height: 26px;border-radius: 10px}
+.J-shoping-buy a:hover{background-position:-3px -277px}
+.J-shoping-mx{width:113px;position:absolute;left:-3px;top:-3px;height:3px;background-position:-4px -187px;z-index:921}
+.J-shoping-small{width:100%}
+/*询盘车 end*/
+
+/*图片展示切换*/
+.showbot{float: left}
+.showbot .showbox { background:#eee}
+.showbot .showbox img{ width:400px;height: 400px}
+.showbot .showsum { left:25px; margin-top:10px}
+.showbot .showsum span { border:1px solid #ddd}
+.showbot .showsum span.sel { border:1px solid #1d7cb9}
+.showbot .showpage { width:400px; position:relative}
+.showbot .showpage a { display:block;font-size: 22px;text-decoration:none; color:#999}
+.showbot .showpage a:hover { background:#eee; color:#666}
+.showbot .showall{width: 100% ;margin-top: 15px}
+/*图片展示切换 end*/
+
+/*尾部 */
+.footer{margin-top: 60px}
+.footer .help{width: 100%;padding: 20px 0;border-top:2px solid #ccc;overflow: hidden}
+.footer .help .help-nav{float: left;width: 25%;height: auto}
+.footer .help .help-nav h5{width: 100%;font-size: 14px;color: #9fa0a0;text-align: center;line-height: 40px}
+.footer .help .help-nav ul li{width: 100%;font-size: 12px;text-align: center;line-height: 24px;color: #9fa0a0}
+.footer .help .help-nav ul li a{text-decoration: none}
+.footer .links{width: 100%;padding: 20px 0;border-top:2px solid #ccc;text-align: center}
+.footer .links img{margin-top: 10px}
+.footer .links p span{display: inline-block;color:#9fa0a0;margin: 0 5px }
+.footer .links p a{text-decoration: none}
+.footer .copyright{width: 100%;padding: 20px 0;border-top:2px solid #ccc;overflow: hidden;text-align: center}
+.footer .copyright p{color:#666;font-size: 12px}
+.footer .copyright .copyright-c{font-size: 14px}
+/*尾部 end*/
+
+/*分页*/
+.page_div{margin-top:20px;margin-bottom:20px;font-size:15px;color:#666;text-align: center;box-sizing:border-box}
+.page_div a{min-width:30px;height:28px;border:1px solid #dce0e0!important;text-align:center;margin:0 4px;cursor:pointer;line-height:28px;color:#666;font-size:13px;display:inline-block}
+#firstPage,#lastPage{width:50px;color:#0073a9;border:1px solid #0073a9!important}
+#prePage,#nextPage{width:70px;color:#0073a9;border:1px solid #0073a9!important}
+.page_div .current{background-color:#0073a9;border-color:#0073a9;color:#fff}
+.totalPages{margin:0 10px}
+.totalPages span,.totalSize span{color:#0073a9;margin:0 5px}
+/*分页 end*/
+
+
+
+
+
+
+
+
+
+
+
