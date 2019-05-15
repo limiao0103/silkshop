@@ -90,6 +90,18 @@
 .comment .comment-item .comment-op .sprite-comment{background-image: url('../image/goods-detail-ping.png')}
 /*商品评价 end*/
 
+@media screen and (min-width:1200px){ .w{width: 1200px}}
+
+@media screen and (min-width:992px){ .w{width: 1200px}}
+
+@media screen and (min-width:768px){
+    .showbot{width: 36%}
+
+}
+@media screen and (min-width:480px){
+    .showbot{width: 36%}
+}
+
 
 
 

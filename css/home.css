@@ -54,6 +54,9 @@
 
 @media screen and (min-width:768px){
     .slider .slider-dot ul{left: 50px}
+    .product-main .product-sidebar{width: 19%}
+    .product-main .product-list ul li{width: 23%}
+    .product-main .product-list ul li:nth-child(1){display: none}
 }
 
 @media screen and (min-width:480px){

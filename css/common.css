@@ -117,11 +117,14 @@ body{background: #fff}
 
 @media screen and (min-width:768px){
     .w{width: 98%;overflow-x: hidden;padding: 0 1%}
+    .header{width: 99%;overflow-x: hidden;padding: 0 1%}
     .header .shop .seach{width: 45%}
     .header .shop .seach input{width: 100%}
     .header .shop .logo{margin-left: 20px}
     .header .shop .shop-car{margin-right: 20px}
-    .slider .slider-dot ul{left: 50px}
+    .header .loginbar .language{margin-left: 45%}
+    .header .loginbar .siginarea{width: 30%}
+
 }
 
 @media screen and (min-width:480px){

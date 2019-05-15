@@ -203,3 +203,16 @@ td{border-right: 1px solid #f2f2f2;text-align: center}
 .order-appraise-goods .appreise-goods-btn a{display: inline-block;width: 100px;height: 30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px;background: #1d7cb9}
 .order-appraise-goods .appreise-goods-btn p{display: inline-block}
 .center-del,.center-upload{cursor: pointer}
+
+@media screen and (min-width:1200px){ .w{width: 1200px}}
+
+@media screen and (min-width:992px){ .w{width: 1200px}}
+
+@media screen and (min-width:768px){
+    .main .selidebar{width: 12%}
+
+}
+
+@media screen and (min-width:480px){
+
+}
