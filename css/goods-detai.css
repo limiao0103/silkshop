@@ -96,7 +96,7 @@
 
 @media screen and (min-width:768px){
     .showbot{width: 36%}
-
+    .tb-property{width: 58%;margin-left: 25px}
 }
 @media screen and (min-width:480px){
     .showbot{width: 36%}

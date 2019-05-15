@@ -124,6 +124,7 @@ body{background: #fff}
     .header .shop .shop-car{margin-right: 20px}
     .header .loginbar .language{margin-left: 45%}
     .header .loginbar .siginarea{width: 30%}
+    .header .loginbar .center .center-hidden{-webkit-transform:translateZ(0)}
 
 }
 
