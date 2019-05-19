@@ -111,11 +111,9 @@ body{background: #fff}
 .totalPages span,.totalSize span{color:#0073a9;margin:0 5px}
 /*分页 end*/
 
-@media screen and (max-width:1200px){ .w{width: 1200px}}
+@media screen and (max-width:1200px)and (min-width:992px){ .w{width: 1200px}}
 
-@media screen and (max-width:992px){ .w{width: 1200px}}
-
-@media screen and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:768px){
     .w{width: 98%;overflow-x: hidden;padding: 0 1%}
     .header{width: 99%;overflow-x: hidden;padding: 0 1%}
     .header .shop .seach{width: 45%}

@@ -78,15 +78,9 @@
 .goods .product-contrast .product-contrast-btn span{font-size: 18px;color: #138ed1;display: block;margin-top: 10px;cursor: pointer}
 /*对比栏 end*/
 
-@media screen and (max-width:1200px){ .w{width: 1200px}}
+@media screen and (max-width:1200px)and (min-width:992px){ .w{width: 1200px}}
 
-@media screen and (max-width:992px){ .w{width: 1200px}}
-
-@media screen and (max-width:768px){
-    .goods{padding: 20px 30px;}
-    .goods .product ul li{width: 24%;   margin-right: .5%;}
-}
-@media screen and (max-width:480px){
+@media screen and (min-width:480px) and (max-width:768px){
     .goods{padding: 20px 30px;}
     .goods .product ul li{width: 24%;   margin-right: .5%;}
 }

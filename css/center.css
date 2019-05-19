@@ -204,15 +204,9 @@ td{border-right: 1px solid #f2f2f2;text-align: center}
 .order-appraise-goods .appreise-goods-btn p{display: inline-block}
 .center-del,.center-upload{cursor: pointer}
 
-@media screen and (max-width:1200px){ .w{width: 1200px}}
+@media screen and (max-width:1200px)and (min-width:992px){ .w{width: 1200px}}
 
-@media screen and (max-width:992px){ .w{width: 1200px}}
-
-@media screen and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:768px){
     .main .selidebar{width: 12%}
-
-}
-
-@media screen and (max-width:480px){
 
 }
